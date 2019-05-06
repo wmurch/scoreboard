@@ -52,8 +52,6 @@ const updateTeam2Name = () => {
 }
 
 
-
-// document.querySelector('.update-team-1-name').addEventListener('click', updateTeam1Name)
 document.querySelector('.team-1-add-1-button').addEventListener('click', addTeam1Point)
 document.querySelector('.team-1-subtract-1-button').addEventListener('click', subTeam1Point)
 document.querySelector('.team-2-add-1-button').addEventListener('click', addTeam2Point)
