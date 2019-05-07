@@ -28,7 +28,7 @@ const updateTeam2Name = () => {
   document.querySelector('.team2Name').textContent = team2Name
 }
 
-//Add to or substract points from Team 1
+//Add to or subtract points from Team 1
 
 const addTeam1Point = () => {
   console.log('button was clicked')
@@ -93,7 +93,7 @@ const subTeam2Point = () => {
 
 const resetTeams = () => {
   Team1ScoreByClick = 0
-  document.querySelector('.team1Score').textContent = Team2ScoreByClick
+  document.querySelector('.team1Score').textContent = Team1ScoreByClick
   Team2ScoreByClick = 0
   document.querySelector('.team2Score').textContent = Team2ScoreByClick
 
@@ -104,6 +104,8 @@ const resetTeams = () => {
   document.querySelector('.team-2-subtract-1-button').disabled = false
   document.querySelector('.team1Name').textContent = "Team 1"
   document.querySelector('.team2Name').textContent = "Team 2"
+  document.querySelector('#team1TxtInput').value = ""
+  document.querySelector('#team2TxtInput').value = ""
 }
 
 document.querySelector('.team-1-add-1-button').addEventListener('click', addTeam1Point)
