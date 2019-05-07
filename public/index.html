@@ -13,18 +13,18 @@
       <section class="team1">
         <h2><span class="team1Name">Team 1</span>
       </h2>
-        <p class="team1Score">10</p>
+        <p class="team1Score">0</p>
       </section>
       <section class="team2">
         <h2><span class="team2Name">Team 2</span></h2>
-        <p class="team2Score">10</p>
+        <p class="team2Score">0</p>
       </section>
     </section>
     <section class="update-score">
       <section class="team1">
         <section class="team-name">
           update team 1 name
-          <input id="team1TxtInput" type="text" />
+          <input id="team1TxtInput" name="team1Input" type="text" />
           <button class="update-team-1-name">Update</button>
         </section>
         <section>
@@ -36,7 +36,7 @@
       <section class="team2">
         <section class="team-name">
           update team 2 name
-          <input id="team2TxtInput" type="text" />
+          <input id="team2TxtInput" name="team2Input" type="text" />
           <button class="update-team-2-name">Update</button>
         </section>
         <section>
@@ -45,7 +45,12 @@
           <button class="team-2-subtract-1-button">subtract 1</button>
         </section>
       </section>
+      <section>
+        reset all scores and buttons
+        <button class="reset-button"> reset </button>
+      </section>
     </section>
+    <h2 class="result"></h2>
     <script src="/main.js" charset="utf-8"></script>
   </body>
 </html>
