@@ -16,14 +16,14 @@ document.addEventListener('DOMContentLoaded', main)
 
 const updateTeam1Name = () => {
   
-  const team1Name = document.querySelector('#team1TxtInput').value
+  team1Name = document.querySelector('#team1TxtInput').value
 
   document.querySelector('.team1Name').textContent = team1Name
 }
 
 const updateTeam2Name = () => {
   
-  const team2Name = document.querySelector('#team2TxtInput').value
+  team2Name = document.querySelector('#team2TxtInput').value
 
   document.querySelector('.team2Name').textContent = team2Name
 }
@@ -102,6 +102,8 @@ const resetTeams = () => {
   document.querySelector('.team-1-subtract-1-button').disabled = false
   document.querySelector('.team-2-add-1-button').disabled = false
   document.querySelector('.team-2-subtract-1-button').disabled = false
+  document.querySelector('.team1Name').textContent = "Team 1"
+  document.querySelector('.team2Name').textContent = "Team 2"
 }
 
 document.querySelector('.team-1-add-1-button').addEventListener('click', addTeam1Point)
